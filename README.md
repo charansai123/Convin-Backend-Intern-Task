@@ -29,6 +29,6 @@ Run the following command to create the database tables
 Start the development server
 
 ```bash
-  python manage.py runserver
+  python3 manage.py runserver
 ```
 Visit "http://127.0.0.1:8000/" in your web browser to see the project running
