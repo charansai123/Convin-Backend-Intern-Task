@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Calendar API</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'css/logo.png' %}" alt="Logo" class="logo">
+        <h1>Welcome to Google Calendar API</h1>
+        <p>Charan Sai Bokkisam</p>
+        <a href="{% url 'calendar_init' %}" class="proceed-button">
+            Proceed
+        </a>
+    </div>
+</body>
+</html>
+

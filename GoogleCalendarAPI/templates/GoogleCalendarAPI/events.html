@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Calendar Events</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/events.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Google Calendar Events</h2>
+        <div class="message">Data fetched successfully.</div>
+        <a href="{% url 'calendar_redirect' %}?download=true" class="download-button">Download JSON</a>
+        <pre id="json-data">{{ json_data }}</pre>
+    </div>
+</body>
+</html>
