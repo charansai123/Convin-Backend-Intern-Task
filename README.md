@@ -1,33 +1,34 @@
-# Convin-Backend-Intern-Task
+
 Django Google Calendar API
 
 ## Run Locally
 
-Clone the project
+Install Python and Django on your machine
+
+Clone or Download the project from the repository
 
 ```bash
-  git clone \
+  git clone https://github.com/charansai123/Convin-Backend-Intern-Task.git
 ```
 
-
-
-Generate Credentials
-
-```bash
-  Go to console.cloud.google.com
-  Add Calendar API from Services
-  Save credentials.json in base directory
-```
-
-
-Install dependencies
+Run the following command to Install dependencies
 
 ```bash
   pip install requirements.txt
 ```
+Run the following command to create the database tables
 
-Start the server
+```bash
+  python3 manage.py makemigrations
+```
+Run the following command to create the database tables
+
+```bash
+  python3 manage.py migrate
+```
+Start the development server
 
 ```bash
   python manage.py runserver
 ```
+Visit "http://127.0.0.1:8000/" in your web browser to see the project running
